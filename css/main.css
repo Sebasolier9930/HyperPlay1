@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --principal:#0583f2;
     --black: #000;
     --letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --trans: rgba(0, 0, 0, 0.6);
+    --trans: rgba(0, 0, 0, 0.2);
     --colorcartas:rgb(1, 11, 64);
+    --colorletra:#7b7b7b;
     --degradado: linear-gradient(345deg, rgba(1, 11, 64, 1) 0%, rgba(1, 11, 64, 1) 29%, rgba(10, 32, 153, 1) 55%, rgba(22, 82, 161, 1) 73%, rgba(5, 108, 242, 1) 100%);
 }
 
@@ -35,7 +37,7 @@ body {
     width: 100%;
 }
 
-header .nav  {
+.nav  {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,19 +46,20 @@ header .nav  {
     padding: 0px 50px;
 }
 
-header .nav a{
+.nav a{
     cursor: pointer;
     
 }
 
-header .nav div .boton {
-    font-size: 10px;
+.boton {
+    font-size: 12px;
     cursor: pointer; 
     background-color: var(--principal);
-    padding: 4px 15px;
-    border-radius: 10%;
+    padding: 5px 15px;
+    border-radius: 5px;
     margin-right: 20px;
     letter-spacing:0.02cm;
+    
 }
 
 a {
@@ -71,13 +74,37 @@ a {
     display: flex;
     width: 200px; 
 }
-
-header .frase h1{
-    display: flex;
-    color: #fff;
-    max-width: 1280px;
+.frase{
     margin: 0 auto;
-    padding: 30px 50px;
+    max-width: 1280px;
+}
+.frase h1{
+    color: #fff;
+    font-size: 32px;
+    width: 500px;
+}
+.busqueda input{
+    background: var(--trans);
+    border-radius: 5px;
+    border-color: var(--principal);
+    font-size: 12px;
+    width: 300px;
+    padding: 10px;
+    color: var(--colorletra);
+    font-weight: bold;
+    margin: 30px 0px;
+    border: 0.1px solid var(--principal);
+}
+.comenzar {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer; 
+    background-color: var(--principal);
+    padding: 10px 25px;
+    border-radius: 5px;
+    letter-spacing:0.02cm;
+    border: none;
+    margin-left: 5px;
 }
 
 /* --------------------------------- */
@@ -85,14 +112,12 @@ header .frase h1{
 main{
     max-width: 1280px;
     margin: 0 auto;
-
+    padding: 30px 40px;
 }
 
 .cards{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-
 }
 
 .card{
@@ -100,12 +125,11 @@ main{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 10px;
     border-radius: 10px;
     width: 400px;
-    min-width: 300px;
-    background: var(--colorcartas);
+    min-width: 200px;
     background: var(--degradado);
+    margin-right: 10px;
 }
 
 .card .imagen img{
@@ -114,21 +138,23 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------- */
 
 .footer {
     width: 100%;
     background-color:var(--trans);
+}
+
+.pregunta{
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.pregunta h4{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 .footer .pie {
@@ -147,6 +173,7 @@ main{
 
 .footer .grupo_1 .siguenos {
     color: #fff;
+    display: flex;
 }
 
 .footer .grupo_1 .social {
@@ -195,3 +222,4 @@ main{
 .footer .grupo_3 {
     color: #fff;
 }
+
