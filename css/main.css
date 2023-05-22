@@ -90,6 +90,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .card{
@@ -97,11 +98,12 @@ main{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #0583f2;
     margin: 10px;
     border-radius: 10px;
     width: 400px;
     min-width: 300px;
+    background: rgb(1, 11, 64);
+    background: linear-gradient(345deg, rgba(1, 11, 64, 1) 0%, rgba(1, 11, 64, 1) 29%, rgba(10, 32, 153, 1) 55%, rgba(22, 82, 161, 1) 73%, rgba(5, 108, 242, 1) 100%);
 }
 
 .card .imagen img{
