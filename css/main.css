@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --principal:#0583f2;
+    --black: #000;
+    --letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --trans: rgba(0, 0, 0, 0.6);
+}
+
+header{
+    width: 100%;
+    padding: 20px 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+    height: 100vh;
+    background-color: #000;
+    font-family: var(--letra);    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel {
+    background-image: linear-gradient(0deg, var(--black) 0%, transparent 40%), linear-gradient(0deg, rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url("../img/plantilla.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+
+header .nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+
+header .nav a{
+    cursor: pointer;
+    
+}
+
+header .nav div .boton {
+    font-size: 10px;
+    cursor: pointer; 
+    background-color: var(--principal);
+    padding: 4px 15px;
+    border-radius: 10%;
+    margin-right: 20px;
+    letter-spacing:0.02cm;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    width: 200px; 
+}
+
+header .frase h1{
+    display: flex;
+    color: #fff;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color:var(--trans);
+}
+
+.footer .pie {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 50px;
+
+}
+
+.footer .grupo_1 {
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px; 
+}
+
+.footer .grupo_1 .siguenos {
+    color: #fff;
+}
+
+.footer .grupo_1 .social {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer .grupo_1 .social div {
+    display: flex;
+    
+    
+}
+
+.footer .grupo_1 .social .facebook{
+    width: 15px; 
+    margin-right: 4px; 
+}
+
+.footer .grupo_1 .social .instagram{
+    width: 15px;    
+    margin-right: 4px; 
+}
+
+.footer .grupo_1 .social .tiktok{
+    width: 15px;  
+    margin-right: 4px;   
+}
+
+.footer .grupo_2 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .grupo_2 span{
+    width: 2px;
+    background-color: var(--principal);
+    height: 20px;
+    margin: 0 40px;
+}
+
+.footer .grupo_3 {
+    color: #fff;
+}
