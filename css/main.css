@@ -8,6 +8,8 @@
     --black: #000;
     --letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --trans: rgba(0, 0, 0, 0.6);
+    --colorcartas:rgb(1, 11, 64);
+    --degradado: linear-gradient(345deg, rgba(1, 11, 64, 1) 0%, rgba(1, 11, 64, 1) 29%, rgba(10, 32, 153, 1) 55%, rgba(22, 82, 161, 1) 73%, rgba(5, 108, 242, 1) 100%);
 }
 
 header{
@@ -102,8 +104,8 @@ main{
     border-radius: 10px;
     width: 400px;
     min-width: 300px;
-    background: rgb(1, 11, 64);
-    background: linear-gradient(345deg, rgba(1, 11, 64, 1) 0%, rgba(1, 11, 64, 1) 29%, rgba(10, 32, 153, 1) 55%, rgba(22, 82, 161, 1) 73%, rgba(5, 108, 242, 1) 100%);
+    background: var(--colorcartas);
+    background: var(--degradado);
 }
 
 .card .imagen img{
